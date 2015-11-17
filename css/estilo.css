@@ -1,8 +1,3 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
     Created on : 16/11/2015, 19:25:06
     Author     : Fabíola Tuany Groh
@@ -14,37 +9,64 @@ and open the template in the editor.
     height: 250px;
 }
 
-#topo p {
-    font-style: italic;
-}
 
-.jumbotron {
+/**
+Topo Jumbotron
+*/
+
+.jumbotron{
     margin: 0;
 }
 
-#body {
-      position: relative; 
- }
-  
- .affix {
-      top:0;
-      width: 100%;
-      z-index: 9999 !important;
- }
-  
- .navbar {
-      margin-bottom: 0px;
- }
+/**
+Menu afixado
+*/
 
- .affix ~ .container-fluid {
-     position: relative;
-     top: 50px;
- }
+body {
+    position: relative; 
+}
+
+.affix {
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+.navbar {
+    margin-bottom: 0px;
+    border-radius: 0;
+    background-color: #115c35;
+}
+
+.affix ~ .container-fluid {
+    position: relative;
+    top: 50px;
+}
+
+/**
+Seções
+*/
+#inicio {padding-top:50px;height:500px;color: #fff; background-color: whitesmoke; padding: 0;}
+#cursos {padding-top:50px;height:600px;color: #fff; background-color: #673ab7;}
+#noticias {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+#fotos {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+#videos {padding-top:50px;height:500px;color: #fff; background-color: red;}
+#contato {padding-top:50px;height:500px;color: #fff; background-color: green;}
+#local {padding-top:50px;height:500px;color: #fff; background-color: blue;}
+
+
+/**
+Carrossel de imagens
+*/
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 80%; height: 500px;
+      margin: auto;
+  }
  
- #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
- #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
- #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
- #section4 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
- #section5 {padding-top:50px;height:500px;color: #fff; background-color: #red;}
- #section6 {padding-top:50px;height:500px;color: #fff; background-color: #green;}
- #section7 {padding-top:50px;height:500px;color: #fff; background-color: #blue;} 
+  /**
+  Personalizar o ícone de dentro de formulário
+  */
+  .has-feedback{
+      color: darkslategray;
+  }
