@@ -9,13 +9,10 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="atylesheet" href="css/animate.css" />
         <link rel="stylesheet" href="css/estilo.css" />
 
-        <!-- Javascript -->
-        <script src="js/jquery-1.11.3.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-
-
+        
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -164,6 +161,10 @@
             </div>
         </section>
 
+        <!-- Javascript -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/validator.js"></script>
         <script src="js/meuscript.js"></script>
         <script src="js/formScript.js"></script>
 

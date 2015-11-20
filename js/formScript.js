@@ -4,12 +4,16 @@
  * 
  */
 
-$("#contactForm").submit(function (event) {
-    // Cancela o envio padrão
-    event.preventDefault();
-    //Chama uma função que fará o envio do formulário
-    console.log("submitForm");
-    submitForm();
+$("#contactForm").validator().on("submit", function (event) {
+    if (event.isDefaultPrevented()) {
+        // formulário inválido
+        formError();
+        submitMSG(false, "Por favor, preencha corretamente o formulário.");
+    } else {
+        // everything looks good!
+        event.preventDefault();
+        submitForm();
+    }
 });
 
 function submitForm() {
@@ -17,7 +21,7 @@ function submitForm() {
     var name = $("#name").val();
     var email = $("#email").val();
     var message = $("#message").val();
-    
+
     console.log("name=" + name + "&email=" + email + "&message=" + message);
 
     $.ajax({
@@ -28,13 +32,29 @@ function submitForm() {
             if (text == "success") {
                 console.log("formSuccess");
                 formSuccess();
-            }else{
+            } else {
                 console.log("formSuccess FALHOU. Texto: " + text);
             }
         }
     });
 }
 function formSuccess() {
-    $("#msgSubmit").removeClass("hidden");
+    $("#contactForm")[0].reset();
+    submitMSG(true, "Mensagem enviada!");
 }
 
+function submitMSG(valid, msg) {
+    var msgClasses;
+    if (valid) {
+        msgClasses = "h3 text-center tada animated text-success";
+    } else {
+        msgClasses = "h3 text-center flash text-danger";
+    }
+    $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+}
+
+function formError() {
+    $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+        $(this).removeClass();
+    });
+}
