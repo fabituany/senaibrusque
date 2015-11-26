@@ -46,9 +46,9 @@ body {
 Seções
 */
 #inicio {padding-top:50px;height:500px;color: #fff; background-color: whitesmoke; padding: 0;}
-#cursos {padding-top:50px;height:600px;color: #fff; background-color: #673ab7;}
-#noticias {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
-#fotos {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+#cursos {padding-top:50px;height:600px;color: #fff; background-color: whitesmoke;}
+#noticias {padding-top:50px;height:500px;color: #fff; background-color: whitesmoke;}
+#fotos {padding-top:50px;height:500px;color: #fff; background-color: whitesmoke;}
 #videos {padding-top:50px;height:500px;color: #fff; background-color: whitesmoke;}
 #contato {padding-top:50px;height:auto;color: #fff; background-color: whitesmoke;}
 #local {padding-top:50px;height:600px;color: #fff; background-color: whitesmoke;}
@@ -71,7 +71,7 @@ Carrossel de imagens
       color: darkslategrey;
   }
   
-  #local h1,#videos h1,#contato h1{
+  #local h1,#videos h1,#contato h1, #cursos h1, #noticias h1, #fotos h1 {
       color: darkslategrey;
       font-family: 'Oswald', sans-serif;
   }
@@ -101,4 +101,22 @@ Carrossel de imagens
   /*Estlizando o formulário de contato*/
   #contactForm .h4{
      color: darkslategrey; 
+  }
+  
+  #cursos p {
+      color: darkslategrey;
+      font-family: arial;
+      padding: 5px;
+  }
+  
+  #noticias p {
+      color: darkslategrey;
+      font-family: arial;
+      padding: 5px;
+  }
+  
+  #fotos p {
+      color: darkslategrey;
+      font-family: arial;
+      padding: 5px;
   }
