@@ -6,11 +6,11 @@
 
 $("#contactForm").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
-        // formulário inválido
+        // Formulário inválido
         formError();
-        submitMSG(false, "Por favor, preencha corretamente o formulário.");
+        submitMSG(false, "Por favor preencha corretamente o formulário.");
     } else {
-        // everything looks good!
+        // Tudo azul!
         event.preventDefault();
         submitForm();
     }
@@ -39,8 +39,10 @@ function submitForm() {
     });
 }
 function formSuccess() {
+    //Limpa o formulário
     $("#contactForm")[0].reset();
-    submitMSG(true, "Mensagem enviada!");
+    //Envia mensagem de sucesso!
+    submitMSG(true, "Mensagem enviada!")
 }
 
 function submitMSG(valid, msg) {
@@ -48,7 +50,7 @@ function submitMSG(valid, msg) {
     if (valid) {
         msgClasses = "h3 text-center tada animated text-success";
     } else {
-        msgClasses = "h3 text-center flash text-danger";
+        msgClasses = "h3 text-center rubberBand animated text-danger";
     }
     $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 }
@@ -58,3 +60,4 @@ function formError() {
         $(this).removeClass();
     });
 }
+

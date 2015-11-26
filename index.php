@@ -9,17 +9,17 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css" />
-        <link rel="atylesheet" href="css/animate.css" />
+        <link rel="stylesheet" href="css/animate.css" />
         <link rel="stylesheet" href="css/estilo.css" />
 
-        
+
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
         <header class="jumbotron text-center" id="topo">
             <h1>SENAI/SC Brusque</h1>
-            <p>Alo Ha mundo do Bootstrap</p>
+            <p>A FORÇA DA INDÚSTRIA CATARINENSE</p>
 
             <form role="form" class="form-inline">
                 <!-- Gerador de Bootstrap Form 
