@@ -21,17 +21,8 @@
             <h1>SENAI/SC Brusque</h1>
             <p>A FORÇA DA INDÚSTRIA CATARINENSE</p>
 
-            <form action="cadastro/cadastro.php" method="post" role="form" class="form-inline">
-                <!-- Gerador de Bootstrap Form 
-                     http://embed.plnkr.co/ZrnnkFR3Yv9HGQHrRMiW/preview -->
-                <!-- Em caso de sucesso na validação: <div class="form-group has-feedback has-success"> -->
-                <!-- Em caso de falha na validação: <div class="form-group has-feedback has-error"> -->
-                <div class="form-group has-feedback">
-                    <input type="email" name="email" class="form-control" placeholder="seunome@provedor.com.br" size="40px"/>
-                    <i class="form-control-feedback glyphicon glyphicon-envelope"></i>
-                </div>
-                <input type="submit" name="btn" value="Cadastrar" class="btn btn-success"/>
-            </form>
+            <?php include 'cadastro/formCadastro.php'; ?>  
+            
         </header>
 
         <!-- Barra de Navegação -->
@@ -167,6 +158,7 @@
         <script src="js/validator.js"></script>
         <script src="js/meuscript.js"></script>
         <script src="js/formScript.js"></script>
+        <script src="js/cadastroScript.js"></script>
 
     </body>
 </html>

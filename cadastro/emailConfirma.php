@@ -39,5 +39,8 @@ function emailConfirma($email, $link) {
     $headers .= 'From: Nome do site <fabi.tuany@gmail.com>';
 
 // Mail it
-    mail($to, $subject, $message, $headers);
+    if (mail($to, $subject, $message, $headers))
+        return 1;
+    else
+        return 0;
 }

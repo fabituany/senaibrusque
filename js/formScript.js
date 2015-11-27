@@ -8,7 +8,7 @@ $("#contactForm").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
         // Formulário inválido
         formError();
-        submitMSG(false, "Por favor preencha corretamente o formulário.");
+        submitMSG(false, "Por favor, preencha corretamente o formulário.");
     } else {
         // Tudo azul!
         event.preventDefault();

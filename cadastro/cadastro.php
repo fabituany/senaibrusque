@@ -61,7 +61,9 @@ if (isset($_POST['btn'])) {
         $p = $conn->prepare($sql);
         $q = $p->execute($parametros);
 
-        
+        header("Location: ../index.php");
+
+
         /**
          * Envio de e-mail para confirmação
          */
@@ -75,95 +77,98 @@ if (isset($_POST['btn'])) {
         $link .= "</a>";
 
         emailConfirma($email, $link);
-        
-        
+
+        if (emailConfirma($email, $link))
+            return 1;
+        else
+            return 0;
 
         /**
          * ----------------------------------
          */
         //Listagem de e-mails
         /*
-        header('Location: cadastro.php?cod=listar');
-         
+          header('Location: cadastro.php?cod=listar');
 
-    } else {
-        header('Location: index.php');
-    }
-} elseif (isset($_GET['cod'])) {
 
-    if ($_GET['cod'] == 'listar') {
-        //LISTAGEM DE E-MAILS
-        // select * from lista // desaconselhado
-        $sql = "SELECT email,cod,situacao,dtCadastro,dtAtualizacao "
-                . "from newsletter";
+          } else {
+          header('Location: index.php');
+          }
+          } elseif (isset($_GET['cod'])) {
 
-        $q = $conn->query($sql);
-        $q->setFetchMode(PDO::FETCH_ASSOC);
+          if ($_GET['cod'] == 'listar') {
+          //LISTAGEM DE E-MAILS
+          // select * from lista // desaconselhado
+          $sql = "SELECT email,cod,situacao,dtCadastro,dtAtualizacao "
+          . "from newsletter";
 
-        while ($r = $q->fetch()) {
-            //desmpilhando os pratos
-            echo "<p style='color:";
-            echo $r['situacao'] ? 'green' : 'red';
-            echo ";'>";
-            echo $r['email'] . "\t";
+          $q = $conn->query($sql);
+          $q->setFetchMode(PDO::FETCH_ASSOC);
 
-            //Link de exclusão
-            echo "<a href='cadastro.php?cod=d&hash=$r[cod]' ";
-            echo "title='Clique para excluir'>";
-            echo $r['cod'];
-            echo "</a>" . "\t";
+          while ($r = $q->fetch()) {
+          //desmpilhando os pratos
+          echo "<p style='color:";
+          echo $r['situacao'] ? 'green' : 'red';
+          echo ";'>";
+          echo $r['email'] . "\t";
+
+          //Link de exclusão
+          echo "<a href='cadastro.php?cod=d&hash=$r[cod]' ";
+          echo "title='Clique para excluir'>";
+          echo $r['cod'];
+          echo "</a>" . "\t";
          * 
-         
 
-            //Link para ser enviado por e-mail
-            $link = "<a href='" . $_SERVER['PHP_SELF'];
-            $link .= "?cod=e&hash=$r[cod]' ";
-            $link .= "title='Clique para confirmar o e-mail'>";
-            $link .= $r['situacao'] . "\t";
-            $link .= "</a>";
 
-            echo $link;
+          //Link para ser enviado por e-mail
+          $link = "<a href='" . $_SERVER['PHP_SELF'];
+          $link .= "?cod=e&hash=$r[cod]' ";
+          $link .= "title='Clique para confirmar o e-mail'>";
+          $link .= $r['situacao'] . "\t";
+          $link .= "</a>";
 
-            echo converteDataMySQLPHP($r['dtCadastro']) . "\t";
-            echo converteDataMySQLPHP($r['dtAtualizacao']);
-            echo "</p>\n";
-        }
-    
-        /*
-            //Exclusão de um registro
-    elseif($_GET['cod'] == 'd' && isset ($_GET['hash'])){
-        $sql = "delete from newsletter where cod = :hash";
+          echo $link;
+
+          echo converteDataMySQLPHP($r['dtCadastro']) . "\t";
+          echo converteDataMySQLPHP($r['dtAtualizacao']);
+          echo "</p>\n";
+          }
+
+          /*
+          //Exclusão de um registro
+          elseif($_GET['cod'] == 'd' && isset ($_GET['hash'])){
+          $sql = "delete from newsletter where cod = :hash";
+          $hash = filter_input(INPUT_GET, 'hash', FILTER_SANITIZE_STRING);
+
+          //echo "<h1>$hash</h1>";
+
+          $p = $conn->prepare($sql);
+          $q = $p->execute(array(':hash'=>$hash));
+
+          header("Location: cadastro.php?cod=listar");
+          }
+         */
+    }
+    //Atualização da situação cadastral
+    //Confirmação de e-mail
+    elseif ($_GET['cod'] == 'e' && isset($_GET['hash'])) {
+
+        $sql = "update newsletter set situacao=1, "
+                . "dtAtualizacao = now() where cod = :hash";
+
         $hash = filter_input(INPUT_GET, 'hash', FILTER_SANITIZE_STRING);
-        
+
         //echo "<h1>$hash</h1>";
-        
+
         $p = $conn->prepare($sql);
-        $q = $p->execute(array(':hash'=>$hash));
-        
-        header("Location: cadastro.php?cod=listar");
+        $q = $p->execute(array(':hash' => $hash));
+
+        header("Location: ../index.php");
     }
-        */
-    }
-            //Atualização da situação cadastral
-            //Confirmação de e-mail
-            elseif ($_GET['cod'] == 'e' && isset($_GET['hash'])) {
-
-                $sql = "update newsletter set situacao=1, "
-                        . "dtAtualizacao = now() where cod = :hash";
-
-                $hash = filter_input(INPUT_GET, 'hash', FILTER_SANITIZE_STRING);
-
-                //echo "<h1>$hash</h1>";
-
-                $p = $conn->prepare($sql);
-                $q = $p->execute(array(':hash' => $hash));
-
-                header("Location: ../index.php");
-            }
-            //Validação do e-mail
+    //Validação do e-mail
 } else {
-                //Botão cadastrar não foi pressionado
-                //E nem o código foi passado
-                //Redireciona para a página inicial
-                header('Location: ../index.php');
-            }            
+    //Botão cadastrar não foi pressionado
+    //E nem o código foi passado
+    //Redireciona para a página inicial
+    header("Location: ../index.php");
+}            

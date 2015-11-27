@@ -9,6 +9,9 @@
     height: 250px;
 }
 
+#topo p {
+    font-style: italic;
+}
 
 /**
 Topo Jumbotron
@@ -102,6 +105,7 @@ Carrossel de imagens
   #contactForm .h4{
      color: darkslategrey; 
   }
+  
   
   #cursos p {
       color: darkslategrey;
