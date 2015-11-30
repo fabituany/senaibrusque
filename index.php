@@ -21,7 +21,7 @@
             <h1>SENAI/SC Brusque</h1>
             <p>A FORÇA DA INDÚSTRIA CATARINENSE</p>
 
-            <?php include 'cadastro/formCadastro.php'; ?>  
+            <?php include 'formCadastro.php' ?>  
             
         </header>
 
@@ -124,11 +124,7 @@
             <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
         </section>
 
-        <section id="noticias" class="container-fluid">
-            <h1>Notícias</h1>
-            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-        </section>
+        <?php include 'noticias.php' ?>
 
         <section id="fotos" class="container-fluid">
             <h1>Fotos</h1>
@@ -143,7 +139,7 @@
             </div>
         </section>
 
-        <?php include 'formContato.php'; ?>
+        <?php include 'formContato.php' ?>
 
         <section id="local" class="container-fluid">
             <div class="text-center">

@@ -2,7 +2,7 @@
     <h1>Contato</h1>
     <div class="row">
         <div class="col-md-4">
-            <p>Entre em contato, responderemos nas próximas 24 horas</p>
+            <p>Entre em contato, responderemos nas próximas 24 horas.</p>
             <p><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>
                 Brusque/SC
             </p>

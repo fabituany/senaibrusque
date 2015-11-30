@@ -1,7 +1,10 @@
 /* 
     Created on : 13/11/2015, 20:34:37
-    Author     : Tarcísio Nunes
+    Author     : Fabíola Tuany Groh
 */
+.text-cadastro{
+    color: #fff;
+}
 
 #topo{
     background-color: #017338;
@@ -50,7 +53,7 @@ Seções
 */
 #inicio {padding-top:50px;height:500px;color: #fff; background-color: whitesmoke; padding: 0;}
 #cursos {padding-top:50px;height:600px;color: #fff; background-color: whitesmoke;}
-#noticias {padding-top:50px;height:500px;color: #fff; background-color: whitesmoke;}
+#noticias {padding-top:50px;height:600px;color: #fff; background-color: whitesmoke;}
 #fotos {padding-top:50px;height:500px;color: #fff; background-color: whitesmoke;}
 #videos {padding-top:50px;height:500px;color: #fff; background-color: whitesmoke;}
 #contato {padding-top:50px;height:auto;color: #fff; background-color: whitesmoke;}
@@ -113,6 +116,15 @@ Carrossel de imagens
       padding: 5px;
   }
   
+  #noticias .col-md-4 {
+    // width: 300px; 
+    text-align: center;
+    // border: 1px solid black;
+    border-radius: 15px;
+    background-color: #017338;
+}
+
+  
   #noticias p {
       color: darkslategrey;
       font-family: arial;
@@ -124,3 +136,5 @@ Carrossel de imagens
       font-family: arial;
       padding: 5px;
   }
+  
+  
