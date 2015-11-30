@@ -116,14 +116,19 @@ Carrossel de imagens
       padding: 5px;
   }
   
-  #noticias .col-md-4 {
-    // width: 300px; 
+  #noticias .col-md-3 {
+    float: left;
+    position: relative;
+    margin: 20px;
     text-align: center;
     // border: 1px solid black;
     border-radius: 15px;
     background-color: #017338;
 }
 
+#noticias .col-md-3 .panel-heading {
+    font-size: 16px;
+}
   
   #noticias p {
       color: darkslategrey;

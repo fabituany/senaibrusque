@@ -1,7 +1,7 @@
 <section id="noticias" class="container-fluid">
     <h1>Notícias</h1>
 
-    <div id="modal1" class="col-md-4">
+    <div id="modal1" class="col-md-3">
         <div class="panel-heading">ENMODA 2015 REFORÇA PARCERIA DO SENAI COM INDÚSTRIAS</div>
         <!--<h3>ENMODA 2015 REFORÇA PARCERIA DO SENAI COM INDÚSTRIAS</h3>-->
         <div class="panel-body">Em Criciúma, macrotendências para o inverno 2017, criadas pelos estudantes do Curso Superior Design de Moda do SENAI e UNESC, serão apresentadas por acadêmicos, nesta quarta-feira, dia 2, no Siso's Hall</div>
@@ -45,7 +45,7 @@
         </div>
     </div>
 
-    <div id="modal2" class="col-md-4">
+    <div id="modal2" class="col-md-3">
         <div class="panel-heading">WORKSHOP MOSTRA GANHOS COM A ATUALIZAÇÃO DOS MOTORES INDUSTRIAIS</div>
         <div class="panel-body">Evento na FIESC debateu a importância da adoção de motores mais eficientes para o aumento na competitividade do setor produtivo</div>
         <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Leia mais...</button>
@@ -94,7 +94,7 @@
         </div>
     </div>
 
-    <div id="modal3" class="col-md-4">
+    <div id="modal3" class="col-md-3">
         <div class="panel-heading">EM DOIS ANOS, PROGRAMA NOVOS CAMINHOS ATENDEU 426 JOVENS EM SC</div>
         <div class="panel-body">Parceria entre FIESC, TJSC e AMC atende jovens e adolescentes sob a tutela do Estado, em programas de acolhimento</div>
         <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Leia mais...</button>
@@ -123,12 +123,10 @@
                             Durante a solenidade, Heil e Cardoso Filho prestaram homenagem em nome do TJSC e da AMC a Glauco José Côrte, pelos relevantes serviços prestados à Educação, em especial o Programa Novos Caminhos.
                             Após a solenidade de formatura, os estudantes participaram de uma gincana recreativa e cultural, organizada pelos profissionais do SESI Eventos. Uma das primeiras tarefas foi a realização de ginástica, na praia, ensolarada. Para muitos deles, foi a oportunidade conhecer o mar.
                         </p>
-                        <p>
-                            FIESC Imprensa
-                            Ivonei José Fazzioni
-                            48 3231 4673 - 8421 3600
-                            ivonei@fiesc.com.br
-                        </p>
+                        <p>FIESC Imprensa</p>
+                        <p>Ivonei José Fazzioni</p>
+                        <p>48 3231 4673 - 8421 3600</p>
+                        <p>ivonei@fiesc.com.br</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
