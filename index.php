@@ -12,7 +12,6 @@
         <link rel="stylesheet" href="css/animate.css" />
         <link rel="stylesheet" href="css/estilo.css" />
 
-
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="50">

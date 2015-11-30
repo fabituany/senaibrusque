@@ -1,15 +1,13 @@
 <section id="noticias" class="container-fluid">
     <h1>Notícias</h1>
 
-    <div id="modal1" class="col-md-3">
+    <div class="col-md-3">
         <div class="panel-heading">ENMODA 2015 REFORÇA PARCERIA DO SENAI COM INDÚSTRIAS</div>
-        <!--<h3>ENMODA 2015 REFORÇA PARCERIA DO SENAI COM INDÚSTRIAS</h3>-->
         <div class="panel-body">Em Criciúma, macrotendências para o inverno 2017, criadas pelos estudantes do Curso Superior Design de Moda do SENAI e UNESC, serão apresentadas por acadêmicos, nesta quarta-feira, dia 2, no Siso's Hall</div>
-        <!--<p>Em Criciúma, macrotendências para o inverno 2017, criadas pelos estudantes do Curso Superior Design de Moda do SENAI e UNESC, serão apresentadas por acadêmicos, nesta quarta-feira, dia 2, no Siso's Hall</p>-->
-        <button id="modal1" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Leia mais...</button>
+        <button type="button" class="btn btn-success btn-default" data-toggle="modal" data-target="#myModal1">Leia mais...</button>
 
         <!-- Modal -->
-        <div id="myModal1" class="modal fade" role="dialog">
+        <div id="myModal1" class="modal" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg">
 
                 <!-- Modal content-->
@@ -45,10 +43,10 @@
         </div>
     </div>
 
-    <div id="modal2" class="col-md-3">
+    <div class="col-md-3">
         <div class="panel-heading">WORKSHOP MOSTRA GANHOS COM A ATUALIZAÇÃO DOS MOTORES INDUSTRIAIS</div>
         <div class="panel-body">Evento na FIESC debateu a importância da adoção de motores mais eficientes para o aumento na competitividade do setor produtivo</div>
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Leia mais...</button>
+        <button type="button" class="btn btn-success btn-default" data-toggle="modal" data-target="#myModal2">Leia mais...</button>
 
         <!-- Modal -->
         <div id="myModal2" class="modal fade" role="dialog">
@@ -75,7 +73,7 @@
                             O administrador da equipe de Eficiência Energética do BNDES, Gaspar Giacomini, destacou outros dois ganhos gerados pela atualização dos motores elétricos industriais, que têm hoje média de 17 anos de uso: menor pressão por aumento na geração de energia, gerando ganhos ambientais; e geração de empregos entre os fabricantes de motores e instaladores especializados. Giacomini falou também das linhas de financiamento disponibilizadas pelo banco estatal, que variam de acordo com complexidade do projeto e do volume demandado. Entre elas estão o Cartão BNDES, o FINAME, a Linha de Eficiência Energética e o FINEM.
                         </p>
                         <p>
-                        Roberto Barbieri, assessor de coordenação da Abinee, demonstrou a situação do Brasil em relação a adoção de motores mais eficientes.  Enquanto países como Estados Unidos, Japão e China, além dos pertencentes à União Europeia, já exigem ou estão exigindo que todos os novos motores atendam a IR3, no Brasil, a exigência é, desde 2010, pelo IR2. Barbieri destacou ainda que, como a idade média dos motores em uso no Brasil é elevada, a popularização dos equipamentos IR2 é demorada.
+                            Roberto Barbieri, assessor de coordenação da Abinee, demonstrou a situação do Brasil em relação a adoção de motores mais eficientes.  Enquanto países como Estados Unidos, Japão e China, além dos pertencentes à União Europeia, já exigem ou estão exigindo que todos os novos motores atendam a IR3, no Brasil, a exigência é, desde 2010, pelo IR2. Barbieri destacou ainda que, como a idade média dos motores em uso no Brasil é elevada, a popularização dos equipamentos IR2 é demorada.
                         </p>
                         <p>
                             “Temos potencial muito grande de conservação de energia”, resumiu Carlos Henrique Ramos Fonseca, lembrando que 68% da energia consumida pelas indústrias é direcionada aos motores e que 70% dos equipamentos têm mais de 10 anos de uso.
@@ -94,10 +92,10 @@
         </div>
     </div>
 
-    <div id="modal3" class="col-md-3">
+    <div class="col-md-3">
         <div class="panel-heading">EM DOIS ANOS, PROGRAMA NOVOS CAMINHOS ATENDEU 426 JOVENS EM SC</div>
         <div class="panel-body">Parceria entre FIESC, TJSC e AMC atende jovens e adolescentes sob a tutela do Estado, em programas de acolhimento</div>
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Leia mais...</button>
+        <button type="button" class="btn btn-success btn-default" data-toggle="modal" data-target="#myModal3">Leia mais...</button>
 
         <!-- Modal -->
         <div id="myModal3" class="modal fade" role="dialog">
