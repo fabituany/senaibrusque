@@ -40,7 +40,7 @@ function emailConfirma($email, $link) {
 
 // Mail it
     if (mail($to, $subject, $message, $headers))
-        return 1;
+        return 1;//E-mail enviado
     else
-        return 0;
+        return 0;//E-mail não enviado
 }

@@ -148,7 +148,7 @@ if (isset($_POST['email'])) {
 
         header("Location: cadastro.php?cod=listar");
     }
-	
+
     //Atualização da situação cadastral
     //Confirmação de e-mail
     elseif ($_GET['cod'] == 'e' && isset($_GET['hash'])) {
