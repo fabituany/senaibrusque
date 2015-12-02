@@ -53,7 +53,7 @@ Seções
 */
 #inicio {padding-top:50px;height:500px;color: #fff; background-color: whitesmoke; padding: 0;}
 #cursos {padding-top:50px;height:600px;color: #fff; background-color: whitesmoke;}
-#noticias {padding-top:50px;height:auto;color: darkslategrey; background-color: whitesmoke;}
+#noticias {padding-top:50px;height:auto; color: darkslategrey; background-color: whitesmoke;}
 #fotos {padding-top:50px;height:500px;color: #fff; background-color: whitesmoke;}
 #videos {padding-top:50px;height:500px;color: #fff; background-color: whitesmoke;}
 #contato {padding-top:50px;height:auto;color: #fff; background-color: whitesmoke;}
@@ -110,24 +110,16 @@ Personalizar o ícone de dentro de formulário
 }
 
 
-#cursos p {
-    color: darkslategrey;
-    font-family: arial;
-    padding: 5px;
-}
-
 //Sistema de notícias
 
 #noticias .panel{
-    margin: 5%;
-    padding: 10px;
 }
 
 #noticias .row .panel {
     margin-left:5%;
     padding: 10px;
     height: auto;
-    text-align: center
+    text-align: center;
 }
 
 #noticias .pagination .active a{
@@ -138,15 +130,3 @@ Personalizar o ícone de dentro de formulário
 
 .modal{margin-top:50px;}
 .modal-content p{text-align:justify;}
-
-#noticias p {
-    color: darkslategrey;
-    font-family: arial;
-}
-
-#fotos p {
-    color: darkslategrey;
-    font-family: arial;
-    padding: 5px;
-}
-

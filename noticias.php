@@ -4,7 +4,7 @@
         <div class="panel panel-success col-lg-3 col-md-3 col-sm-3">
             <div class="panel-heading">ENMODA 2015 REFORÇA PARCERIA DO SENAI COM INDÚSTRIAS</div>
             <div class="panel-body">Em Criciúma, macrotendências para o inverno 2017, criadas pelos estudantes do Curso Superior Design de Moda do SENAI e UNESC, serão apresentadas por acadêmicos, nesta quarta-feira, dia 2, no Siso's Hall</div>
-            <button type="button" class="btn btn-success center-block" data-toggle="modal" data-target="#noticia1">Leia mais...</button>
+            <button id="1" type="button" class="btn btn-success center-block" data-toggle="modal" data-target="#noticia1">Leia mais...</button>
 
             <!-- Modal -->
             <div id="noticia1" class="modal fade" role="dialog">
@@ -19,6 +19,7 @@
                         </div>
                         <div class="modal-body">
                             <time class="h4">30/11/2015 20:44:56</time>
+                            <p>Autor: fulando de tal</p>
                             <p>
                                 Florianópolis, 30.11.2015 – A décima segunda edição do EnModa traz como novidade o aprofundamento da parceria entre faculdade e indústria. Realizado pelo curso superior em Tecnologia em Design de Moda do SENAI em Criciúma, em parceria com a Unesc, o evento será realizado na próxima quarta-feira, dia 2, no Siso’s Hall. Nesta edição, que traz as macrotendências para o inverno 2017, os modelos que serão exibidos na passarela foram concebidos em conjunto com 23 empresas ligadas ao setor do vestuário. A partir dos projetos realizados pelos acadêmicos da sexta fase do curso, cada empresa escolheu três looks para apoiar a criação, sendo dois com conceito comercial e um conceitual.
                             </p>
@@ -47,7 +48,7 @@
         <div class="panel panel-success col-lg-3 col-md-3 col-sm-3">
             <div class="panel-heading">WORKSHOP MOSTRA GANHOS COM A ATUALIZAÇÃO DOS MOTORES INDUSTRIAIS</div>
             <div class="panel-body">Evento na FIESC debateu a importância da adoção de motores mais eficientes para o aumento na competitividade do setor produtivo</div>
-            <button type="button" class="btn btn-success center-block" data-toggle="modal" data-target="#noticia2">Leia mais...</button>
+            <button id="2" type="button" class="btn btn-success center-block" data-toggle="modal" data-target="#noticia2">Leia mais...</button>
 
             <!-- Modal -->
             <div id="noticia2" class="modal fade" role="dialog">
@@ -62,6 +63,7 @@
                         </div>
                         <div class="modal-body">
                             <time class="h4">30/11/2015 15:20:56</time>
+                            <p>Autor: fulando de tal</p>
                             <p>
                                 Florianópolis, 30.11.2015 – Redução no consumo de energia e aumento na vida útil dos motores são algumas das principais vantagens ao se adotar os motores elétricos de alta eficiência. O tema foi debatido no Workshop sobre Motores Premium, realizado na Federação das Indústrias de Santa Catarina (FIESC). Para uma plateia de industriais, especialistas de Eletrobras, BNDES e da Associação Brasileira da Indústria Elétrica e Eletrônica (Abinee) explicaram as vantagens que podem ser obtidas com a adoção de motores enquadrados na especificação IR3, classificados como “Premium”.
                             </p>
@@ -97,7 +99,7 @@
         <div class="panel panel-success col-lg-3 col-md-3 col-sm-3">
             <div class="panel-heading">EM DOIS ANOS, PROGRAMA NOVOS CAMINHOS ATENDEU 426 JOVENS EM SC</div>
             <div class="panel-body">Parceria entre FIESC, TJSC e AMC atende jovens e adolescentes sob a tutela do Estado, em programas de acolhimento</div>
-            <button type="button" class="btn btn-success center-block" data-toggle="modal" data-target="#noticia3">Leia mais...</button>
+            <button id="3" type="button" class="btn btn-success center-block" data-toggle="modal" data-target="#noticia3">Leia mais...</button>
 
             <!-- Modal -->
             <div id="noticia3" class="modal fade" role="dialog">
@@ -112,6 +114,7 @@
                         </div>
                         <div class="modal-body">
                             <time class="h4">28/11/2015 10:00:56</time>
+                            <p>Autor: fulando de tal</p>
                             <p>
                                 Florianópolis, 28.11.2015 – Um total de 426 jovens e adolescentes que estão ou estiveram sob a tutela do Estado em todas as regiões de Santa Catarina já passaram, desde 2013, por cursos de preparação para o mundo do trabalho, de qualificação profissional e de educação de jovens e adultos, oferecidos pelo Programa Novos Caminhos. A iniciativa é uma parceria da Federação das Indústrias (FIESC) – e suas entidades SESI, SENAI e IEL – com o Tribunal de Justiça de Santa Catarina (TJSC) e a Associação dos Magistrados Catarinenses (AMC). Neste sábado (28), cerca de 150 estudantes receberam seus certificados, em uma solenidade realizada no Centro de Educação, Eventos e Lazer (CEEL), no Campeche, em Florianópolis.
                                 “O programa tem sido muito positivo; 39 jovens, que já se formaram, estão empregados, trabalhando no setor industrial. O mais importante é que estamos formando bons profissionais e também bons cidadãos”, afirmou o presidente da FIESC, Glauco José Côrte. A construção da cidadania aliada à capacitação para o trabalho é uma premissa defendida pelo empresário desde o início de sua gestão da FIESC e ganha relevância em iniciativas como o Novos Caminhos, que oferece oportunidades a jovens que vivem em programas de acolhimento em instituições ou com outras famílias. Esses jovens não podem viver com seus pais – são órfãos, suas famílias não têm condições de dar sustento ou são vítimas de violência doméstica, entre outras circunstâncias. “Queremos mostrar que o jovem e a criança têm valor, independentemente de sua condição, que precisa ser respeitada. No período em que estamos trabalhando com esses jovens, queremos que suas potencialidades sejam reveladas. Nosso propósito, portanto, é ajudá-los a ter consciência do seu valor e da sua importância para a sociedade”, acrescentou Côrte.
@@ -138,11 +141,11 @@
             </div>
         </div>
     </div>
-    
-<ul class="pagination pull-right">
-    <li><a href="#">1</a></li>
-    <li class="active"><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-</ul>
+
+    <ul class="pagination pull-right">
+        <li><a href="#">1</a></li>
+        <li class="active"><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+    </ul>
 
 </section>

@@ -119,16 +119,14 @@
 
         <section id="cursos" class="container-fluid">
             <h1>Cursos</h1>
-            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            <p></p>
         </section>
 
         <?php include 'noticias.php' ?>
 
         <section id="fotos" class="container-fluid">
             <h1>Fotos</h1>
-            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            <p></p>
         </section>
 
         <section id="videos" class="container-fluid">
@@ -154,6 +152,7 @@
         <script src="js/meuscript.js"></script>
         <script src="js/formScript.js"></script>
         <script src="js/cadastroScript.js"></script>
+        <script src="js/noticia.js"></script>
 
     </body>
 </html>
